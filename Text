@@ -1,0 +1,52 @@
+1.Reverse a String
+
+Method 1:
+
+a="python is  a easy language"
+b=''
+for word in a[::-1]:
+    b=b+word
+print(b)
+
+
+Method 2:
+a="python is  a easy language"
+ad=a
+b=''
+for word in a[::-1]:
+    b=b+word
+if b==ad:
+    print("palindrome:",b)
+else:
+    print("not a palindrome:",b)
+
+
+
+2. pre pend method for rev string
+
+Method 1:
+a="python is a language"
+clean=a.replace(" ","").lower()
+rev_str=""
+for word in a:
+    rev_str=word+rev_str
+print(rev_str)
+
+
+Method 2:
+a="python is a language"
+#clean=a.replace(" ","").lower()
+rev_str=""
+for word in a:
+    rev_str=word+rev_str
+print(rev_str)
+
+
+
+
+
+
+
+
+
+
