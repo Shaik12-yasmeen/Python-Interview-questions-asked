@@ -1,0 +1,189 @@
+
+1.Palindrome:
+  palindrome  is a number ,word ,sequence of chara ters that reads same backward as forward.
+
+
+  using string:
+  
+  def_str='MADAM'
+a=def_str
+cal=''
+for i in  def_str:
+    cal=i+cal
+if cal==a:
+    print("palindrome number")
+else:
+    print("not a palindrome number")
+
+  using number:
+
+
+n=121
+b=n
+a=0
+for i in range(len(str(n))):
+    rem=n%10
+    a=a*10+rem
+    n=n//10
+if  a==b:
+    print("palindrome")
+else:
+    print("not  apalindrome")
+
+  
+
+
+2.factorial:
+product of non negative integer from 1 to n,it is a non negative integer denoted by n!
+
+
+  n=5
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+print(fact) 
+
+
+
+3.Prime or composite:
+
+n=6
+count=0
+if n==0 or n==1:
+        print("number is neither prime nor composite")
+else:
+    for i in range(1,n+1):
+        if  n%i==0:
+            count=count+1
+    if count==2:
+       print("prime number",i)
+    else:
+        print("composite number",i)
+
+
+  
+
+
+  4.fibnocci series:
+it a sequence of number each number after the first two is sum of thhe preceding of two ones
+
+n=5
+a=0
+b=1
+for i in range(1,n+1):
+    a,b=b,a+b
+print(a)
+
+
+
+
+5.Angstrom number:
+number is eaual to sum of the its digits each raised  to the  power to the total number of the digits
+
+
+a=151
+d=a
+b=0
+c=len(str(a))
+for i in range(c):
+    rem=a%10
+    b=rem**c+b
+    a=a//10
+if b==d:
+    print("Angstrom number")
+else:
+    print("not")
+
+
+
+  
+    
+6.find the largest number    
+----->First largest
+
+n=[20,10,40,30]
+word_largest=0
+for i in range(len(n)):
+    if n[i]>word_largest:
+        word_largest=n[i]
+print(word_largest)   
+
+
+------>second largest
+
+n=[20,10,40,30]
+word_largest=n[0]
+second_largest=0
+for i in range(len(n)):
+    if n[i]>word_largest:
+        second_largest=word_largest
+        word_largest=n[i]
+    elif word_largest>second_largest and n[i]!=word_largest:
+        second_largest=n[i]
+
+print(second_largest)  
+
+
+----------------->for negative number
+---->first negative number which is largest
+
+n=[-20,-10,-40,-30]
+word_largest=n[0]
+for i in range(len(n)):
+    if n[i]>word_largest:
+        word_largest=n[i]
+print(word_largest)
+
+
+---->second negative number which is largest
+
+n=[-20,-10,-40,-30]
+word_largest=n[0]
+second_largest=float('-inf')
+for i in range(len(n)):
+    if n[i]>word_largest:
+        second_largest=word_largest
+        word_largest=n[i]
+    elif n[i]>second_largest and n[i]!=word_largest:
+        second_largest=n[i]
+print(second_largest)
+
+
+
+
+
+7.Count Frequency of Characters
+
+--------->using dict format
+
+s="data"
+d={}
+for i in s:
+    if i in d:
+        d[i]=d[i]+1
+    else:
+        d[i]=1
+print(d) 
+
+output:{'d': 1, 'a': 2, 't': 1}
+
+
+
+
+8.Remove Duplicates from a List
+
+nums = [1, 2, 2, 3, 4, 4]
+nums1=[]
+for i in nums:
+    if  i  not in nums1:
+        nums1.append(i)
+print(nums1)
+
+        
+        
+        
+
+
+
+
+  
